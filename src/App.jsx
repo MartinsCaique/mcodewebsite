@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+import { Header } from './components/Header'
+
 
 function App() {
 
@@ -13,6 +14,8 @@ function App() {
 
         { /* Blur effect */ }
         <div className="h-0 w-160 absolute top-[20%] right-[-5%] shadow-[0_0_900px_20px_#e99b63] rotate-[-30deg] -z-10"></div>
+
+        <Header />
         
       </main>
     </>
