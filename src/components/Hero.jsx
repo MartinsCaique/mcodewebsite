@@ -1,5 +1,6 @@
 import React from 'react'
 import 'boxicons/css/boxicons.min.css';
+import Spline from '@splinetool/react-spline';
 
 export const Hero = () => {
   return (
@@ -7,7 +8,7 @@ export const Hero = () => {
 
         <div className="max-w-xl ml-[5%] z-10 mt-[90%] md:mt-[60%] lg:mt-0">
             {/* Tag with box-with gradient border */}
-            <div className="relative w-[95%] sm:w-48 h-10 bg-linear-to-r from[#656565] to-[#e99b63] shadow-[0_0_15px_rgba(255,255,255,0.4)] rounded-full">
+            <div className="relative w-[95%] sm:w-48 h-10 bg-linear-to-r from-[#656565] to-[#e99b63] shadow-[0_0_15px_rgba(255,255,255,0.4)] rounded-full">
                 <div className="absolute inset-0.75 bg-black rounded-full flex items-center justify-center gap-1">
                     <i class='bx bx-diamond'></i>
                     INTRODUCING
@@ -38,7 +39,7 @@ export const Hero = () => {
         </div>
 
         {/* 3d Robot */}
-
+        <Spline className='absolute lg:top-0 top-[-20%] bottom-0 lg:left-[25%] sm:left-[2%] h-full' scene="https://prod.spline.design/eIIeUnArLdqhLFb2/scene.splinecode" />
     </main>
   )
 }
